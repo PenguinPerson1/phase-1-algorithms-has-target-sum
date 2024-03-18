@@ -1,5 +1,10 @@
 function hasTargetSum(array, target) {
-  // Write your algorithm here
+  for (let i = 0; i < array.length; i++) {
+    if(array.includes(target-array[i],i+1)){
+      return true;
+    }
+  }
+  return false;
 }
 
 /* 
@@ -7,7 +12,10 @@ function hasTargetSum(array, target) {
 */
 
 /* 
-  Add your pseudocode here
+  get the value
+  target - value
+  does that equal any others in array?
+  repeat
 */
 
 /*
